@@ -1,0 +1,325 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} 
+
+body {
+    background-color: white ;
+    height: 100vh ;
+}
+
+.interface { 
+    max-width: 1280px; 
+    margin: 0 auto; 
+
+} 
+
+.flex{ 
+    display: flex;
+}
+
+h2.titulo{
+    color:#6a9c89; 
+
+    font-size: 38px;
+    text-align: center; 
+
+} 
+
+header {
+    padding: 60px 4%; 
+} 
+
+header > .interface {
+    display: flex; 
+    align-items:  center;
+    justify-content: space-between;
+
+} 
+
+header a { 
+    color: #16423c;
+    text-decoration: green;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #16423c;
+    
+}
+
+header nav ul { 
+    list-style-type: none;
+}  
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 100px;
+}
+
+section.texto-topo{ 
+    padding: 60px 4%; 
+    align-items: center;
+    justify-content: center;
+
+}
+
+section.texto-topo.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+h1{
+    font-size: 70px;
+}
+h2 {
+    font-size: 30px;
+}
+
+.imagem-topo-site img {
+    width: 70%;  
+    height: auto; 
+}
+
+.flex {
+    display: flex; 
+    align-items: center; 
+}
+
+.texto-topo {
+    flex: 1; 
+}
+
+.imagem-topo-site {
+    flex: 1; 
+} 
+
+.texto-sobre {
+    margin-right: 150px; 
+}
+
+p1 {
+    font-size: 18px;
+}
+
+
+
+.menu_site ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.menu_site li {
+    display: inline-block; 
+    margin-right: 20px; 
+    transition: transform 0.3s; 
+}
+
+.menu_site li:hover {
+    transform: scale(1.2); 
+}
+
+
+.menu_site ul {
+    white-space: nowrap; 
+
+
+}
+
+h2{
+    color: #16423c;
+}
+
+/* estilo especialidades */ 
+section.especialidades{
+    padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+.especialidades-box{
+    padding: 40px; 
+    border: solid ;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+    
+}
+
+.especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #16423c
+    b
+}
+
+.especialidades-box i{ 
+    color: #16423c;
+    font-size: 70px;
+}
+
+/* início da estilização da parte sobre mim */ 
+section.sobre{
+    padding: 40px 4%;
+    
+} 
+
+section.sobre .flex{
+    align-items: center;
+    gap: 90px;
+}
+
+.sobre.txt-sobre{
+    color: black
+}
+
+.sobre .txt-sobre h2 { 
+    font-size: 40px ;
+    line-height: 40px;
+    margin-bottom: 30px;
+} 
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .botao-redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #6a9c89 ;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px; 
+
+
+
+} 
+
+.botao-redes button:hover{
+    box-shadow:  0px 0px 8px;
+    transform: scale(1.05);
+    transition: 0.2s;
+    
+}
+
+/* início estilização do portfólio */ 
+
+section.portfolio{
+    padding: 80px 4%;
+    
+}
+
+section.portfolio .flex{
+    justify-content: space-around ;
+    gap: 80px
+}
+
+.imagem-portfolio{
+    width: 300px;
+    height: 300px;
+    background-color:white  ;
+    background-size: cover;
+    background-position: 100% 0%;
+    
+} 
+
+/* inicio estilização contato */
+
+section.formulario{
+    padding: 80px 4%;
+} 
+
+form{
+    max-width: 500px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 40px;
+
+} 
+
+form input , form textarea{ 
+    width: 100%;
+    background-color: #6a9c89;
+    border: 0; 
+    outline: 0; 
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px ;
+
+} 
+
+form textarea{ 
+    resize: none;
+    max-height: 300px; 
+
+}
+
+form .botao-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .botao-enviar input{
+   width: 120px;
+   background-color: #16423c;
+   font-weight: 700px; 
+   cursor: pointer;
+
+
+}
+
+@media screen and (max-width: 1285.60px){
+/* inicio da personalização media query cabeçalho */ 
+    .flex{
+        flex-direction: column;
+    }
+
+    .menu_site{
+        display: nome; 
+        ;
+    }
+
+    .topo-site h1{
+        font-size: 30px
+    } 
+
+    .topo-site .imagem-topo-site img{
+        width: 80%;
+    } 
+
+    /* inicio da personalização seção sobre */ 
+
+    section.sobre {
+        padding: 80px 8%; 
+
+    } 
+
+    .sobre .texto-sobre h2{ 
+        font-size: 30px; 
+        line-height: 40px; 
+        text-align: center;
+        
+    }
+
+    .botao-redes{
+        text-align: center;
+    } 
+
+    section.portfolio .flex{
+        gap: 60px; 
+    }
+
+    
+
+}
